@@ -233,7 +233,42 @@ SELECT X, SUM(Y) as NEW_Y FROM tab1 GROUP BY X;
 | D  | 4  |
 
 > Daremos um nome a esse SELECT que executamos, criando uma visão chamada "VW_VIEW". Então, se rodarmos SELECT * FROM VW_VIEW, teremos como retorno o resultado de SELECT X, SUM(Y) as NEW_Y FROM tab1 GROUP BY X (a tabela 2). Ou seja, é como se essa view fosse uma subconsulta.
-
 <hr>
+
+### FUNÇÕES DO MYSQL
+> Funções são nelas que residem as maiores diferenças entre os vários bancos que utilizam SQL. Estamos conhecendo essa linguagem usando o MySQL. A maior parte do que aprendemos até agora (como DISTINCT e JOIN) é muito parecido ou igual entre o MySQL, o Oracle ou o SQL Server, por exemplo, citando os três principais bancos relacionais do mercado.
+#### Classificação em trẽs grandes grupos:
+1. Funções escalares (utilizam textos)
+2. Funções de data (manipulam datas)
+3. Funções matemáticas (realizam operações entre campos float ou inteiros na nossa base de dados)
+#### Funções de string
+> Existem muitas funções de string
+```
+/* REMOVE OS ESPAÇOS DO INICIO */
+SELECT LTRIM('     OLÁ') AS RESULTADO;
+
+/* REMOVE OS ESPAÇOS DO FINAL */
+SELECT RTRIM('OLÁ     ') AS RESULTADO;
+
+/* REMOVE OS ESPAÇOS DO INICIO E FINAL */
+SELECT TRIM('    OLÁ    ') AS RESULTADO;
+
+/* CONCATENANDO */
+SELECT CONCAT('OLÁ', ' ', 'TUDO BEM', '?') AS RESULTADO;
+
+/* DEIXA TUDO EM MAIUSCULO */
+SELECT UPPER('olá tudo bem?') AS RESULTADO;
+
+/* DEIXA TUDO EM MINUSCULO */
+SELECT LOWER('OLÁ TUDO BEM?') AS RESULTADO;
+
+/* ACHAR UMA STRING DENTRO DE OUTRA STRING */
+SELECT SUBSTRING('OLÁ, TUDO BEM?', 6) AS RESULTADO;
+SELECT SUBSTRING('OLÁ, TUDO BEM?', 6, 4) AS RESULTADO;
+```
+* Mas é meio perda de tempo colocar todas aqui, caso tiver alguma dúvida é só procurar na documentação
+* [Documentação oficial](https://dev.mysql.com/doc/)
+* [Documentação dá w3schools (mais simples na minha opinião)](https://www.w3schools.com/mysql/mysql_ref_functions.asp)
+
 
 
