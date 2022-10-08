@@ -266,7 +266,7 @@ SELECT LOWER('OLÁ TUDO BEM?') AS RESULTADO;
 SELECT SUBSTRING('OLÁ, TUDO BEM?', 6) AS RESULTADO;
 SELECT SUBSTRING('OLÁ, TUDO BEM?', 6, 4) AS RESULTADO;
 ```
-* Mas é meio perda de tempo colocar todas aqui, caso tiver alguma dúvida é só procurar na documentação
+> Perda de tempo colocar todas as funções aqui, só procurar na documentação
 * [Documentação oficial](https://dev.mysql.com/doc/)
 * [Documentação dá w3schools (mais simples na minha opinião)](https://www.w3schools.com/mysql/mysql_ref_functions.asp)
 
