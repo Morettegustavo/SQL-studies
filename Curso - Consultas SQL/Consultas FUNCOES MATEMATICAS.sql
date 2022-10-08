@@ -1,0 +1,28 @@
+SELECT (23+((25-2)/2)*45) AS RESULTADO;
+
+/* PRÓXIMO INTEIRO ACIMA DO NÚMERO */
+SELECT CEILING(12.33323323) AS RESULTADO;
+
+/* ARREDONDA PARA BAIXO */
+SELECT FLOOR(12.3333323) AS RESULTADO;
+
+/* ARREDONDA DEPENDENDO DO NÚMERO DEPOIS DÁ VIRGULA */
+SELECT ROUND(12.3333323) AS RESULTADO;
+
+/* ELE GERA UM NÚMERO ALEATORIO */
+SELECT RAND() AS RESULTADO;
+
+SELECT NUMERO, QUANTIDADE, PRECO, ROUND(QUANTIDADE * PRECO, 2) AS FATURAMENTO
+FROM itens_notas_fiscais;
+
+/* 
+Na tabela de notas fiscais temos o valor do imposto. 
+Já na tabela de itens temos a quantidade e o faturamento. 
+Calcule o valor do imposto pago no ano de 2016 arredondando para o menor inteiro. 
+*/
+
+SELECT YEAR(DATA_VENDA), FLOOR(SUM(IMPOSTO * (QUANTIDADE * PRECO))) 
+FROM notas_fiscais NF
+INNER JOIN itens_notas_fiscais INF ON NF.NUMERO = INF.NUMERO
+WHERE YEAR(DATA_VENDA) = 2016
+GROUP BY YEAR(DATA_VENDA);
