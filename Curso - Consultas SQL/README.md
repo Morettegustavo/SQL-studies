@@ -4,7 +4,7 @@
 * **`Meus estudos de SQL, utilizando MYSQL.`**
 # Cursos
 ***
-- [ ] Consultas SQL: avançando no SQL com MySQL
+- [x] Consultas SQL: avançando no SQL com MySQL
 * Pagine seus dados com LIMIT
 * Filtre consultas com HAVING
 * Entenda a diferença entre o LEFT e RIGHT JOIN
