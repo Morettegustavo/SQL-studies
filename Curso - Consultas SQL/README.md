@@ -269,6 +269,12 @@ SELECT SUBSTRING('OLÁ, TUDO BEM?', 6, 4) AS RESULTADO;
 > Perda de tempo colocar todas as funções aqui, só procurar na documentação
 * [Documentação oficial](https://dev.mysql.com/doc/)
 * [Documentação dá w3schools (mais simples na minha opinião)](https://www.w3schools.com/mysql/mysql_ref_functions.asp)
+<hr>
+
+# Certificado
+***
+![certificacao](https://user-images.githubusercontent.com/88351614/194725769-9f669518-5c7f-4ad5-b46e-579a21f09aa9.jpeg)
+
 
 
 
