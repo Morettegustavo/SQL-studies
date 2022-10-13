@@ -11,7 +11,7 @@
 * Atualize e apague dados com UPDATE e DELETE
 * Estruture suas tabelas com CREATE TABLE e ALTER TABLE
 
-- [ ] Consultas SQL: avançando no SQL com MySQL
+- [x] Consultas SQL: avançando no SQL com MySQL
 * Pagine seus dados com LIMIT
 * Filtre consultas com HAVING
 * Entenda a diferença entre o LEFT e RIGHT JOIN
